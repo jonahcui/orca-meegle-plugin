@@ -1,0 +1,13 @@
+{
+  "name": "meegle-integration",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Independent Orca Meegle sidebar plugin",
+  "scripts": {
+    "typecheck": "node scripts/typecheck.mjs",
+    "test": "/Applications/Orca.app/Contents/Resources/bin/orca plugin test . --json",
+    "check": "/Applications/Orca.app/Contents/Resources/bin/orca plugin check . --json",
+    "validate": "/Applications/Orca.app/Contents/Resources/bin/orca plugin validate . --json",
+    "setup": "/Applications/Orca.app/Contents/Resources/bin/orca plugin types . --json"
+  }
+}
