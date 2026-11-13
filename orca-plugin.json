@@ -1,0 +1,35 @@
+{
+  "manifestVersion": 2,
+  "id": "meegle-integration",
+  "name": "Meegle",
+  "version": "0.1.0",
+  "description": "阅读 Meegle 待办与需求，预览后交给 Orca 工作区中的 Agent。",
+  "engines": {
+    "orca": ">=1.4.258"
+  },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": {
+    "panels": [
+      {
+        "id": "meegle-integration",
+        "title": "Meegle",
+        "icon": "layers",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ]
+  },
+  "capabilities": [
+    {
+      "kind": "workspace:read"
+    },
+    {
+      "kind": "workspace:write"
+    },
+    {
+      "kind": "agent:launch"
+    }
+  ]
+}
